@@ -3,12 +3,15 @@ FROM ubuntu:latest
 ENV STACKALYTICS_MEMCACHED_MEMORY=1024
 
 RUN apt-get update && apt-get -y install \
+    build-essential \
     git \
+    libffi-dev \
     libpython2.7-dev \
     libssl-dev \
     memcached \
     nginx \
     openssl \
+    python-dev \
     python-pip \
     uwsgi \
     uwsgi-plugin-python
